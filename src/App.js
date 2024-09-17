@@ -1,18 +1,19 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home';
 import ProductCategory from './Pages/ProductCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
         <Navbar/>
+
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/led' element={<ProductCategory category='led'/>}/>
@@ -24,8 +25,8 @@ function App() {
           <Route path='/cart' element={<Cart/>}/>
           <Route path='/login' element={<LoginSignup/>}/>
         </Routes>
-      </BrowserRouter>
-      
+        
+        <Footer/>
     </div>
   );
 }
