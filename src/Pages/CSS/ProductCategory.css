@@ -40,3 +40,60 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+@media(max-width:1280px){
+    .productcategory-banner{
+        margin: 20px auto;
+        width: 90%;
+    }
+    
+    .productcategory-indexSort{
+        width: 90%;
+        margin: auto;
+    }
+
+    .productcategory-sort{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .productcategory-indexSort p{
+        font-size: 12px;
+    }
+    .productcategory-products{
+        width: 90%;
+        margin: 10px auto;
+        row-gap: 40px;
+    }
+    .productcategory-products .item{
+        margin: auto;
+    }
+    .productcategory-loadmore{
+        margin: 100px auto;
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:800px){
+    .productcategory-banner{
+        width: 95%;
+    }
+    .productcategory-products{
+        width: 95%;
+    }
+    .productcategory-loadmore{
+        margin: 60px auto;
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width:500px){
+    .productcategory-products{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
